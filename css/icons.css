@@ -1,0 +1,17 @@
+/* Iconos dibujados solo con CSS.*/
+.ic {
+  display: inline-block;
+  flex: none;
+  width: var(--s, 16px);
+  height: var(--s, 16px);
+  background: currentColor;
+}
+.ic-play  { clip-path: polygon(15% 0, 100% 50%, 15% 100%); }
+.ic-pause { background: linear-gradient(90deg, currentColor 0 34%, transparent 34% 66%, currentColor 66%); }
+.ic-next  { clip-path: polygon(0 0, 72% 46%, 72% 0, 100% 0, 100% 100%, 72% 100%, 72% 54%, 0 100%); }
+.ic-prev  { clip-path: polygon(0 0, 72% 46%, 72% 0, 100% 0, 100% 100%, 72% 100%, 72% 54%, 0 100%); transform: scaleX(-1); }
+.ic-heart {
+  --heart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21s-8.5-5.2-8.5-11.2A4.6 4.6 0 0 1 12 7.4a4.6 4.6 0 0 1 8.5 2.4C20.5 15.8 12 21 12 21z'/%3E%3C/svg%3E");
+  -webkit-mask: var(--heart) center / contain no-repeat;
+          mask: var(--heart) center / contain no-repeat;
+}

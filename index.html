@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Guau guau guau guau</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/cover.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/player.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="side"><nav class="nav" id="nav"></nav></aside>
+
+    <main class="main" id="main"></main>
+
+    <footer class="player">
+      <div class="np">
+        <div class="np-cover" id="np-cover"></div>
+        <div class="np-text"><b id="np-titulo"></b><span id="np-artista"></span></div>
+        <button class="like" id="np-like" aria-label="Guau"><i class="ic ic-heart"></i></button>
+      </div>
+
+      <div class="controls">
+        <div class="btns">
+          <button class="btn-round" id="prev" aria-label="Guau"><i class="ic ic-prev"></i></button>
+          <button class="fab fab--sm" id="play" aria-label="Guau"></button>
+          <button class="btn-round" id="next" aria-label="Guau"><i class="ic ic-next"></i></button>
+        </div>
+        <div class="slider" id="seek"></div>
+      </div>
+
+      <div class="volume"><div class="slider" id="vol" style="--p:70%"></div></div>
+    </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

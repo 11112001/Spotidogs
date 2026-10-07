@@ -1,0 +1,39 @@
+/* Reset y estructura general: barra lateral | contenido | reproductor */
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font: 500 14px/1.4 var(--sans);
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+button:focus-visible { outline: 5px solid var(--acc); outline-offset: 2px; }
+
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 8px;
+  padding: 8px;
+  padding-top: max(8px, env(safe-area-inset-top));
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+}
+
+.side, .main, .player {
+  background: var(--s1);
+  border-radius: var(--radius-panel);
+}
+.main { overflow: auto; scrollbar-width: thin; }

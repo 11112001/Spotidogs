@@ -1,0 +1,30 @@
+/* Variables de diseño. Paleta azul + amarillo: los colores que mejor distinguen los perros. */
+:root {
+  --bg: #071126;
+  --s1: #0E1D3D;      /* paneles */
+  --s2: #16294F;      /* tarjetas */
+  --ink: #FFF6DC;     /* texto */
+  --mute: #9DB2DD;    /* texto/iconos secundarios */
+  --acc: #FFD23F;     /* acento */
+  --onacc: #1A1500;   /* texto sobre el acento */
+  --line: #ffffff14;
+  --track: #ffffff26;
+
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --radius-panel: 14px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #E3ECFA;
+    --s1: #F4F8FF;
+    --s2: #D3E0F5;
+    --ink: #0E1D3D;
+    --mute: #4A5F8A;
+    --acc: #1D4ED8;
+    --onacc: #FFFFFF;
+    --line: #00000014;
+    --track: #00000022;
+  }
+}
